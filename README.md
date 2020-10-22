@@ -10,17 +10,17 @@ Quizes are common feature of our student-facing apps. Can you build a simple qui
 
 Using the following wireframes, build a quiz interface. The questions are all in [questions.json](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/master/src/questions.json).
 
-![Question](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/blob/main/docs/wire-question.png)
+![Question](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/main/docs/wire-question.png)
 
-![Correct Answer](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/blob/main/docs/wire-answer-correct.png)
+![Correct Answer](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/main/docs/wire-answer-correct.png)
 
-![Incorrect Answer](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/blob/main/docs/wire-answer-incorrect.png)
+![Incorrect Answer](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/main/docs/wire-answer-incorrect.png)
 
-![Progress](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/blob/main/docs/wire-progress.png)
+![Progress](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/main/docs/wire-progress.png)
 
-![Difficulty](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/blob/main/docs/wire-difficulty.png)
+![Difficulty](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/main/docs/wire-difficulty.png)
 
-![Score](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/blob/main/docs/wire-score.png)
+![Score](https://raw.githubusercontent.com/Entrolics-LLC/React-Quiz/main/docs/wire-score.png)
 
 ## Instructions
 
