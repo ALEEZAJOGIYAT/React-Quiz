@@ -1,0 +1,32 @@
+.app {
+  /* text-align: center; */
+  /* background-color: #999fac; */
+  min-height: 100vh;
+  margin-left: 60px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  font-size: calc(10px + 2vmin);
+  /* color: white; */
+}
+.box {
+  margin-left: 300px;
+  /* margin-top: 50px; */
+  border: 2px solid rgb(10, 10, 10);
+  height: 30px;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  /* // align-items: center;
+  // margin-left: 46rem;
+  // margin-top: 8rem; */
+  box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+.linearprogress {
+  background-color: black;
+}
+.bars {
+  /* display: flex; */
+}
