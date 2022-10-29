@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import StarIcon from "@mui/icons-material/Star";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import { DATA } from "./data";
-import { LinearProgress, Typography } from "@mui/material";
-import { Alert } from "reactstrap";
+import { Button, LinearProgress, Typography } from "@mui/material";
 
 import "./style.css";
 
@@ -11,6 +10,7 @@ export const Quiz = () => {
 	const [currQues, setCurrQues] = useState(0);
 	const [score, setScore] = useState(0);
 	const [inCorrectScore, setInCorrectScore] = useState(10);
+	const [isCorect, setIsCorrect]=useState(false)
 
 	//only questions
 	const question = [...DATA];
@@ -23,7 +23,8 @@ export const Quiz = () => {
 		setCurrQues(nextquestion);
 	};
 
-	const handleSelect = (answer, incorrect_answer) => {
+	const handleSelect = (answer) => {
+		setIsCorrect(true)
 		if (answer === question[currQues].correct_answer) {
 			let scores = score + 1;
 			let correct_score_percent = (scores / question.length) * 100;
@@ -48,32 +49,33 @@ export const Quiz = () => {
 					{question[currQues].incorrect_answers.map((incorrect_answer) => {
 						return (
 							<div>
-								<button
-									variant="contained"
-									style={{ margin: 5, display: "flex" }}
-									onClick={() => handleSelect(incorrect_answer)}
+								<Button
+								variant="contained"
+								style={{ margin: 5, display: "flex"}}
+								onClick={() => handleSelect(incorrect_answer)}
+								disabled={isCorect}
 								>
-									{incorrect_answer}
-								</button>
+								{incorrect_answer}
+								</Button>
 							</div>
 						);
 					})}
 				</div>
 				<div className="correct-answer-options">
-					<button
+					<Button
 						style={{ margin: 5, display: "flex" }}
 						onClick={() => handleSelect(answer)}
 					>
 						{answer}
-					</button>
+					</Button>
 				</div>
 
-				<button
+				<Button
 					style={{ marginLeft: 180, marginTop: 20 }}
 					onClick={() => handleNext()}
 				>
 					NEXT QUESTION
-				</button>
+				</Button>
 
 				<LinearProgress
 					value={score}
