@@ -21,16 +21,19 @@ export const Quiz = () => {
 	const handleNext = () => {
 		const nextquestion = currQues + 1;
 		setCurrQues(nextquestion);
+		setIsCorrect(false)
 	};
 
 	const handleSelect = (answer) => {
-		setIsCorrect(true)
 		if (answer === question[currQues].correct_answer) {
+			setIsCorrect(true)
 			let scores = score + 1;
 			let correct_score_percent = (scores / question.length) * 100;
 			setScore(correct_score_percent);
 		} else {
+			setIsCorrect(false)
 		}
+
 	};
 
 	return (
@@ -65,6 +68,7 @@ export const Quiz = () => {
 					<Button
 						style={{ margin: 5, display: "flex" }}
 						onClick={() => handleSelect(answer)}
+						variant='contained'
 					>
 						{answer}
 					</Button>
