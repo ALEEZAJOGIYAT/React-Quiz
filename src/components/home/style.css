@@ -1,0 +1,37 @@
+.body{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+.body-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-image{
+    width: 403px;
+    height: 393px;
+    display: flex;
+    /* flex-direction: unset; */
+}
+.body-img{
+    /* box-sizing: border-box;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    align-items: center; */
+    margin-left: 40%;
+    margin-top: 60px;
+
+}
+.body-text{
+    margin-top: -20rem;
+    display: flex;
+    margin-left: 6rem;
+}
+.form-body{
+    display: flex;
+    justify-content: center;
+
+}
